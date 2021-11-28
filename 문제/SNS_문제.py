@@ -70,16 +70,16 @@ while snsState :
         
         inputId = input("아이디 : ")
         inputPw = input("비밀번호 : ")
-        
-        # 아이디 비밀 번호 검사
-        for i in range(0, len(userId)) : 
-            if userId[i] == inputId and userPw[i] == inputPw : 
-                loginState = True
-                loginId = inputId
-                break
-        
-        if loginState == False :
-            dialog("아이디 또는 비밀번호 오류 입니다.")
+
+
+
+
+
+
+
+
+
+
     
     # 회원가입 기능
     elif mode == 2 : 
@@ -87,16 +87,17 @@ while snsState :
         
         inputId = input("아이디 : ")
         inputPw = input("비밀번호 : ")
-        
-        # 아이디 중복 검사
-        for i in range(0, len(userId)) : 
-            if userId[i] == inputId : 
-                dialog("중복 아이디 입니다.")
-            
-            elif i == len(userId) - 1 : 
-                userId.append(inputId)
-                userPw.append(inputPw)
-                dialog("회원가입에 성공하였습니다.")         
+
+
+
+
+
+
+
+
+
+
+    
          
     # 프로그램 종료       
     elif mode == 3 : 
@@ -121,8 +122,9 @@ while snsState :
         print()
         
         if mode == 1 : 
-            for i in range (0,len(title)) : 
-                script(i,title[i],writer[i],text[i])
+            
+            
+            
         
         elif mode == 2 : 
             dialog("게시글 등록을 시작합니다")
@@ -130,13 +132,12 @@ while snsState :
             inputTitle = input("제목 : ")
             inputText = input("내용 : ")
             
-            if len(inputTitle) == 0 or len(inputText) == 0 : 
-                dialog("제목 또는 내용이 없습니다")
-            else : 
-                title.append(inputTitle)
-                writer.append(loginId)
-                text.append(inputText)
-                dialog("게시글 등록이 완료되었습니다.")
+            
+            
+            
+            
+            
+            
         
         elif mode == 3 : 
             dialog("정상적으로 로그아웃 되었습니다")

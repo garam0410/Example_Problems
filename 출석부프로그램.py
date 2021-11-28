@@ -64,13 +64,13 @@ while state :
             if i == 0 : 
                 studentName = input("이름을 입력하세요 : ")
             elif i == 1 : 
-                studentGrade = input("학년을 입력하세요.(1~3) : ")
+                studentGrade = input("학년을 입력하세요.(1~4) : ")
             elif i == 2 : 
                 studentNumber = input("학번을 입력하세요 : ")
             elif i == 3 : 
                 studentMajor = input("전공을 입력하세요 : ")
         
-        if int(studentGrade) <= -1 or int(studentGrade) >= 4 or len(studentName) == 0 or len(studentMajor) == 0 or int(studentNumber) < 0: 
+        if int(studentGrade) <= -1 or int(studentGrade) >= 5 or len(studentName) == 0 or len(studentMajor) == 0 or int(studentNumber) < 0: 
             print("입력값이 올바르지 않습니다.\n")
         else : 
             grade.append(studentGrade)
